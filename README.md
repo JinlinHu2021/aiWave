@@ -42,7 +42,7 @@ For training, using [make_tfrecords.py](https://github.com/xdmustc/aiWave/blob/m
 
 Several traditional codecs were used as our anchor, including JP3D, JPEG-2000-Part2, HEVC, HEVC-RExt. We published the command lines of them to facilitate the use and reproduction of our results.
 
-For JP3D, the [OpenJPEG 2.3.1](http://www.openjpeg.org/2019/04/02/OpenJPEG-2.3.1-released) software was adopted with the command line below.
+- For JP3D, the [OpenJPEG 2.3.1](http://www.openjpeg.org/2019/04/02/OpenJPEG-2.3.1-released) software was adopted with the command line below.
 
 Encode command line:
 ```shell
@@ -54,7 +54,7 @@ Decode command line:
 ```
 
 
-For JPEG-2000-Part2, the [Kakadu 6.1](https://kakadusoftware.com/) software was adopted with the command line below.
+- For JPEG-2000-Part2, the [Kakadu 6.1](https://kakadusoftware.com/) software was adopted with the command line below.
 
 Encode command line:
 ```shell
@@ -66,7 +66,7 @@ kdu_expand -i output.jpx -o input.tif -raw_components 0 -skip_components 0 -cpu 
 ```
 
 
-For HEVC, the [HM 16.15](https://vcgit.hhi.fraunhofer.de/jvet/HM/-/tree/HM-16.15) software was adopted with the command line below.
+- For HEVC, the [HM 16.15](https://vcgit.hhi.fraunhofer.de/jvet/HM/-/tree/HM-16.15) software was adopted with the command line below.
 
 Encode command line:
 ```shell
@@ -78,7 +78,7 @@ Decode command line:
 ```
 
 
-For HEVC-RExt, the [HM 16.15](https://vcgit.hhi.fraunhofer.de/jvet/HM/-/tree/HM-16.15) software was adopted with the command line below.
+- For HEVC-RExt, the [HM 16.15](https://vcgit.hhi.fraunhofer.de/jvet/HM/-/tree/HM-16.15) software was adopted with the command line below.
 
 Encode command line:
 ```shell
@@ -88,6 +88,7 @@ Decode command line:
 ```shell
 ./TAppDecoder.exe -b input.bin -o input.yuv > log_decode.log 
 ```
+
 
 
 ### 3. Error-guided finetuning
@@ -121,12 +122,6 @@ If you find this work helpful, please consider citing our paper.
 }
 ```
 
-## Related Projects
-
-[Light field depth estimation, LFDEN](https://github.com/JiayongO-O/LFDEN)
-
-[ZSSR](https://github.com/assafshocher/ZSSR)
-
 ## Contact
 
-If you have any problem about the released code, please do not hesitate to contact me with email (mywander@mail.ustc.edu.cn).
+If you have any problem about the released code, please do not hesitate to contact me with email (xdm1@mail.ustc.edu.cn).
