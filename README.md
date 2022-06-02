@@ -33,7 +33,7 @@ Original websites of these datasets are given:
 - [Attention](https://www.fil.ion.ucl.ac.uk/spm/data/attention/)
 - [MRNet](https://stanfordmlgroup.github.io/competitions/mrnet/)
 
-Download our processed data from [BaiduYun](https://pan.baidu.com/s/1fjuJmnSrjWQBzVBXjoO_EA) (Access code: 7gtd)
+All the data is converted to .tif or .nii.gz format and crop to smaller size suanch as 64*64*64. Download our processed data from [BaiduYun](https://pan.baidu.com/s/1fjuJmnSrjWQBzVBXjoO_EA) (Access code: 7gtd)
 
 For training, using [make_tfrecords.py](https://github.com/xdmustc/aiWave/blob/main/make_tfrecords.py) to make a TensorFlow dataset.
 
@@ -90,17 +90,12 @@ Decode command line:
 ```
 
 
-### 3. Pre-trained Model
+### 3. Fully-trained Model
 
-Our error-guided finetuning needs a pre-trained model for initialization and error map generation, please download our pre-trained models.
+During the training process, additive wavelet-like transform was end-to-end trained firstly. Please refer to [lifting97_3D_learned.py](https://github.com/xdmustc/aiWave/blob/main/lifting97_3D_learned.py) and [wavelet_3D_learned.py](https://github.com/xdmustc/aiWave/blob/main/wavelet_3D_learned.py) for additive wavelet-like transform. Then we fiexed the entropy model to train the affine wavelet-like transform with [lifting97_3D_learned_f.py](https://github.com/xdmustc/aiWave/blob/main/lifting97_3D_learned_f.py) and [wavelet_3D_learned_f.py](https://github.com/xdmustc/aiWave/blob/main/wavelet_3D_learned_f.py). Finally, all the models were trained jointly to finetune the parameters.
 
-Take scene *Spear_Fence_2* in dataset *EPFL* with scaling factor 2 and source dataset *HFUT* as an example.
+We provide the fully-trained model of our method. Download the releaed model from [BaiduYun](https://pan.baidu.com/s/11RWv8K3BDWcw_S5O1MyPxA) (Access code: xdv4)
 
-```shell
-python Main_error_guided_finetuning.py --dataset="EPFL" --start=2 --end=3 --scale=2 --source="HFUT" --record
-```
-
-You can refer to the script [Main_error_guided_finetuning.py](https://github.com/Joechann0831/LFZSSR/blob/master/Main_error_guided_finetuning.py) to know the meaning of each parameter.
 
 
 ## Citation
