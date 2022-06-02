@@ -24,7 +24,7 @@ Dongmei Xue, Haichuan Ma, Li Li, Dong Liu, and Zhiwei Xiong, aiWave: Volumetric 
 
 We make lossy and lossless compression experiments on totally seven 3D biomedical datasets. All of the information of the datasets can be seen below.
 
-- Original websites of these datasets are given:
+Original websites of these datasets are given:
 - [FAFB](https://temca2data.org/)
 - [FIB-25](https://bio-protocol.org/prep657)
 - [Spleen-CT](http://medicaldecathlon.com/)
@@ -33,9 +33,9 @@ We make lossy and lossless compression experiments on totally seven 3D biomedica
 - [Attention](https://www.fil.ion.ucl.ac.uk/spm/data/attention/)
 - [MRNet](https://stanfordmlgroup.github.io/competitions/mrnet/)
 
-- Download our processed data from [BaiduYun](https://pan.baidu.com/s/1fjuJmnSrjWQBzVBXjoO_EA) (Access code: 7gtd)
+Download our processed data from [BaiduYun](https://pan.baidu.com/s/1fjuJmnSrjWQBzVBXjoO_EA) (Access code: 7gtd)
 
-- For training, using [make_tfrecords.py](https://github.com/xdmustc/aiWave/blob/main/make_tfrecords.py) to make a TensorFlow dataset.
+For training, using [make_tfrecords.py](https://github.com/xdmustc/aiWave/blob/main/make_tfrecords.py) to make a TensorFlow dataset.
 
 
 ### 2. Command Line of anchors
@@ -48,7 +48,6 @@ Encode command line:
 ```shell
 ./opj_jp3d_compress.exe -i input.bin -m config.img -o output.jp3d -r 5 -T 3DWT -C 3EB > log_encode.log
 ```
-
 Decode command line:
 ```shell
 ./opj_jp3d_decompress.exe -i output.jp3d -m config.img -O input.bin -o output.bin > log_decode.log
@@ -73,7 +72,6 @@ Encode command line:
 ```shell
 ./TAppEncoder.exe -c encoder_randomaccess_main_rext.cfg -c config.cfg -i input.yuv -b input.bin -o output.bin --ECU=1 --CFM=1 --ESD=1 --FramesToBeEncoded=64 --QP=10 > log_encode.log 
 ```
-
 Decode command line:
 ```shell
 ./TAppDecoder.exe -b input.bin -o input.yuv > log_decode.log 
@@ -86,7 +84,6 @@ Encode command line:
 ```shell
 ./TAppEncoder.exe -c encoder_randomaccess_main_rext.cfg -c config.cfg -i input.yuv -b input.bin -o input.yuv --ECU=1 --CFM=1 --ESD=1 --FramesToBeEncoded=64 --QP=25 > log_encode.log
 ```
-
 Decode command line:
 ```shell
 ./TAppDecoder.exe -b input.bin -o input.yuv > log_decode.log 
