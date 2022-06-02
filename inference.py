@@ -5,7 +5,7 @@ import tensorflow as tf
 from math import log
 import numpy as np
 import os
-import wavelet_3D_learned
+import wavelet_3D_learned_f
 import scale_quant
 import entropy_codec
 import creat_Long_context
@@ -43,7 +43,7 @@ def graph(x):
 
     with tf.variable_scope('wavelet', reuse=tf.AUTO_REUSE):
         for i in range(decomposition_step):
-            LLL, HLL, LHL, HHL, LLH, HLH, LHH, HHH = wavelet_3D_learned.decomposition(LLL)
+            LLL, HLL, LHL, HHL, LLH, HLH, LHH, HHH = wavelet_3D_learned_f.decomposition(LLL)
 
             HLL_collection.append(HLL)
             LHL_collection.append(LHL)
@@ -110,7 +110,7 @@ def graph(x):
         for j in range(decomposition_step):
             i = decomposition_step - 1 - j
 
-            LLL = wavelet_3D_learned.reconstruct_3D(LLL,
+            LLL = wavelet_3D_learned_f.reconstruct_3D(LLL,
                                                       HLL_collection[i],
                                                       LHL_collection[i],
                                                       HHL_collection[i],
