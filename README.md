@@ -3,7 +3,7 @@
 
 **Official implementation** of the following paper
 
-Dongmei Xue, Haichuan Ma, Li Li, Dong Liu, and Zhiwei Xiong, aiWave: Volumetric Image Compression with 3-D Trained Affine Wavelet-like Transform. In IEEE Transactions on Medical Imaging 2022.
+Dongmei Xue, Haichuan Ma, Li Li, Dong Liu, and Zhiwei Xiong, aiWave: Volumetric Image Compression with 3-D Trained Affine Wavelet-like Transform. Submit to IEEE Transactions on Medical Imaging.
 
 
 
