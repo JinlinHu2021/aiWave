@@ -90,8 +90,7 @@ Decode command line:
 ```
 
 
-
-### 3. Error-guided finetuning
+### 3. Pre-trained Model
 
 Our error-guided finetuning needs a pre-trained model for initialization and error map generation, please download our pre-trained models.
 
@@ -103,22 +102,17 @@ python Main_error_guided_finetuning.py --dataset="EPFL" --start=2 --end=3 --scal
 
 You can refer to the script [Main_error_guided_finetuning.py](https://github.com/Joechann0831/LFZSSR/blob/master/Main_error_guided_finetuning.py) to know the meaning of each parameter.
 
-### 4. Hyper-parameters
-
-We set the hyper-parameters during training and testing after tuning on our testing data. If you want to use our algorithm on your own data, please refer to [Hyper-parameters](https://github.com/Joechann0831/LFZSSR/tree/master/hyper-parameters) for detailed descriptions of each hyper-parameter.
 
 ## Citation
 
 If you find this work helpful, please consider citing our paper.
 
 ```latex
-@InProceedings{Cheng_2021_CVPR,
-    author    = {Cheng, Zhen and Xiong, Zhiwei and Chen, Chang and Liu, Dong and Zha, Zheng-Jun},
-    title     = {Light Field Super-Resolution With Zero-Shot Learning},
-    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
-    month     = {June},
-    year      = {2021},
-    pages     = {10010-10019}
+@article{xue2022aiwave,
+  title={aiWave: Volumetric Image Compression with 3-D Trained Affine Wavelet-like Transform},
+  author={Xue, Dongmei and Ma, Haichuan and Li, Li and Liu, Dong and Xiong, Zhiwei},
+  journal={arXiv preprint arXiv:2203.05822},
+  year={2022}
 }
 ```
 
