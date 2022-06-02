@@ -33,7 +33,7 @@ Original websites of these datasets are given:
 - [Attention](https://www.fil.ion.ucl.ac.uk/spm/data/attention/)
 - [MRNet](https://stanfordmlgroup.github.io/competitions/mrnet/)
 
-All the data is converted to .tif or .nii.gz format and crop to smaller size suanch as 64*64*64. Download our processed data from [BaiduYun](https://pan.baidu.com/s/1fjuJmnSrjWQBzVBXjoO_EA) (Access code: 7gtd)
+All the data is converted to .tif or .nii.gz format and crop to smaller size such as 64*64*64. Download our processed data from [BaiduYun](https://pan.baidu.com/s/1fjuJmnSrjWQBzVBXjoO_EA) (Access code: 7gtd)
 
 For training, using [make_tfrecords.py](https://github.com/xdmustc/aiWave/blob/main/make_tfrecords.py) to make a TensorFlow dataset.
 
