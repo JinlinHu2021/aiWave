@@ -9,12 +9,12 @@ Dongmei Xue, Haichuan Ma, Li Li, Dong Liu, and Zhiwei Xiong, aiWave: Volumetric 
 
 ## Dependencies
 
-- Python 3 (Recommend to use [Anaconda](https://www.anaconda.com/download/#linux))
-- Pytorch 1.0.0
-- Numpy
-- Scipy
-- TensorboardX
-- MATLAB (For data preparation)
+- Python 3.6 
+- TensorFlow 1.14.0
+- Numpy 1.17.3
+- pandas 1.1.5
+- dask 2.9.1
+- [SimpleITK 2.1.1.2](https://pypi.org/project/SimpleITK/) 
 
 
 
